@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 3.1 - DOM</title>
+    <style>
+        .element {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .expanded .content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista Elementów</h1>
+    <div id="elements-container"></div>
+
+    <h2>Dodaj nowy element</h2>
+    <form id="add-element-form">
+        <label for="title">Tytuł: </label>
+        <input type="text" id="title" required><br><br>
+        <label for="description">Opis: </label>
+        <input type="text" id="description" required><br><br>
+        <button type="submit">Dodaj element</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
